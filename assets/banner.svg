@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 200" width="900" height="200">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#161b22;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4285F4;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#6C3EEB;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#22C55E;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="900" height="200" fill="url(#bgGrad)" rx="12"/>
+  <!-- Grid lines -->
+  <line x1="0" y1="40" x2="900" y2="40" stroke="#21262d" stroke-width="1"/>
+  <line x1="0" y1="80" x2="900" y2="80" stroke="#21262d" stroke-width="1"/>
+  <line x1="0" y1="120" x2="900" y2="120" stroke="#21262d" stroke-width="1"/>
+  <line x1="0" y1="160" x2="900" y2="160" stroke="#21262d" stroke-width="1"/>
+  <line x1="180" y1="0" x2="180" y2="200" stroke="#21262d" stroke-width="1"/>
+  <line x1="360" y1="0" x2="360" y2="200" stroke="#21262d" stroke-width="1"/>
+  <line x1="540" y1="0" x2="540" y2="200" stroke="#21262d" stroke-width="1"/>
+  <line x1="720" y1="0" x2="720" y2="200" stroke="#21262d" stroke-width="1"/>
+  <!-- Accent dots -->
+  <circle cx="50" cy="50" r="3" fill="#4285F4" opacity="0.6"/>
+  <circle cx="850" cy="150" r="3" fill="#22C55E" opacity="0.6"/>
+  <circle cx="80" cy="170" r="2" fill="#6C3EEB" opacity="0.5"/>
+  <circle cx="820" cy="30" r="2" fill="#FF7C00" opacity="0.5"/>
+  <!-- Main title -->
+  <text x="450" y="95" font-family="'Segoe UI', system-ui, sans-serif" font-size="42" font-weight="700" text-anchor="middle" fill="url(#textGrad)" filter="url(#glow)">Ultimate RAG System</text>
+  <!-- Subtitle -->
+  <text x="450" y="135" font-family="'Segoe UI', system-ui, sans-serif" font-size="16" text-anchor="middle" fill="#8b949e">Chat with your documents using state-of-the-art AI</text>
+  <!-- Tags -->
+  <rect x="220" y="152" width="90" height="24" rx="12" fill="#4285F420" stroke="#4285F4" stroke-width="1"/>
+  <text x="265" y="168" font-family="monospace" font-size="11" text-anchor="middle" fill="#4285F4">Gemini Flash</text>
+  <rect x="325" y="152" width="80" height="24" rx="12" fill="#6C3EEB20" stroke="#6C3EEB" stroke-width="1"/>
+  <text x="365" y="168" font-family="monospace" font-size="11" text-anchor="middle" fill="#6C3EEB">ChromaDB</text>
+  <rect x="420" y="152" width="80" height="24" rx="12" fill="#FF7C0020" stroke="#FF7C00" stroke-width="1"/>
+  <text x="460" y="168" font-family="monospace" font-size="11" text-anchor="middle" fill="#FF7C00">LangChain</text>
+  <rect x="515" y="152" width="70" height="24" rx="12" fill="#22C55E20" stroke="#22C55E" stroke-width="1"/>
+  <text x="550" y="168" font-family="monospace" font-size="11" text-anchor="middle" fill="#22C55E">Self-RAG</text>
+  <rect x="600" y="152" width="80" height="24" rx="12" fill="#FFD21E20" stroke="#FFD21E" stroke-width="1"/>
+  <text x="640" y="168" font-family="monospace" font-size="11" text-anchor="middle" fill="#FFD21E">HuggingFace</text>
+</svg>

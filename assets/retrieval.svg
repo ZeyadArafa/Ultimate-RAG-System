@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 260" width="900" height="260">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117"/>
+      <stop offset="100%" style="stop-color:#161b22"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="260" fill="url(#bg)" rx="12"/>
+  <text x="450" y="30" font-family="'Segoe UI', sans-serif" font-size="17" font-weight="700" text-anchor="middle" fill="#f0f6fc">🔎 Retrieval Strategy Weights</text>
+
+  <!-- HYBRID -->
+  <text x="160" y="60" font-family="monospace" font-size="13" font-weight="700" text-anchor="middle" fill="#f0f6fc">HYBRID</text>
+  <text x="160" y="78" font-family="monospace" font-size="10" text-anchor="middle" fill="#8b949e">BM25 50% · Vector 50%</text>
+  <!-- Bar BM25 -->
+  <rect x="30" y="90" width="260" height="28" rx="14" fill="#21262d"/>
+  <rect x="30" y="90" width="130" height="28" rx="14" fill="#FF7C00"/>
+  <rect x="160" y="90" width="130" height="28" rx="14" fill="#4285F4"/>
+  <text x="95"  y="109" font-family="monospace" font-size="11" font-weight="700" text-anchor="middle" fill="#fff">BM25 50%</text>
+  <text x="225" y="109" font-family="monospace" font-size="11" font-weight="700" text-anchor="middle" fill="#fff">Vector 50%</text>
+  <text x="160" y="142" font-family="monospace" font-size="9" text-anchor="middle" fill="#8b949e">⭐ Recommended for most use cases</text>
+
+  <!-- SEMANTIC -->
+  <text x="450" y="60" font-family="monospace" font-size="13" font-weight="700" text-anchor="middle" fill="#f0f6fc">SEMANTIC</text>
+  <text x="450" y="78" font-family="monospace" font-size="10" text-anchor="middle" fill="#8b949e">BM25 30% · Vector 70%</text>
+  <rect x="320" y="90" width="260" height="28" rx="14" fill="#21262d"/>
+  <rect x="320" y="90" width="78" height="28" rx="5" fill="#FF7C00"/>
+  <rect x="398" y="90" width="182" height="28" rx="14" fill="#6C3EEB"/>
+  <text x="359"  y="109" font-family="monospace" font-size="11" font-weight="700" text-anchor="middle" fill="#fff">30%</text>
+  <text x="489" y="109" font-family="monospace" font-size="11" font-weight="700" text-anchor="middle" fill="#fff">Vector 70%</text>
+  <text x="450" y="142" font-family="monospace" font-size="9" text-anchor="middle" fill="#8b949e">Best for multilingual &amp; complex analysis</text>
+
+  <!-- KEYWORD -->
+  <text x="740" y="60" font-family="monospace" font-size="13" font-weight="700" text-anchor="middle" fill="#f0f6fc">KEYWORD</text>
+  <text x="740" y="78" font-family="monospace" font-size="10" text-anchor="middle" fill="#8b949e">BM25 70% · Vector 30%</text>
+  <rect x="610" y="90" width="260" height="28" rx="14" fill="#21262d"/>
+  <rect x="610" y="90" width="182" height="28" rx="14" fill="#FF7C00"/>
+  <rect x="792" y="90" width="78" height="28" rx="5" fill="#4285F4"/>
+  <text x="701" y="109" font-family="monospace" font-size="11" font-weight="700" text-anchor="middle" fill="#fff">BM25 70%</text>
+  <text x="831" y="109" font-family="monospace" font-size="11" font-weight="700" text-anchor="middle" fill="#fff">30%</text>
+  <text x="740" y="142" font-family="monospace" font-size="9" text-anchor="middle" fill="#8b949e">Best for exact term / quick fact lookup</text>
+
+  <!-- Legend -->
+  <rect x="310" y="170" width="16" height="16" rx="3" fill="#FF7C00"/>
+  <text x="332" y="183" font-family="monospace" font-size="11" fill="#8b949e">BM25 (Keyword weight)</text>
+  <rect x="520" y="170" width="16" height="16" rx="3" fill="#4285F4"/>
+  <text x="542" y="183" font-family="monospace" font-size="11" fill="#8b949e">Vector (Semantic weight)</text>
+
+  <!-- Summary line -->
+  <line x1="60" y1="210" x2="840" y2="210" stroke="#21262d" stroke-width="1"/>
+  <text x="450" y="232" font-family="monospace" font-size="10" text-anchor="middle" fill="#8b949e">Weights are configurable in RAGConfig.RETRIEVAL_STRATEGIES</text>
+  <text x="450" y="250" font-family="monospace" font-size="10" text-anchor="middle" fill="#8b949e">Ensemble retriever blends results from BM25 (rank_bm25) + ChromaDB vector store</text>
+</svg>

@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 160" width="900" height="160">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117"/>
+      <stop offset="100%" style="stop-color:#161b22"/>
+    </linearGradient>
+    <marker id="arr" markerWidth="7" markerHeight="7" refX="5" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L7,3 z" fill="#4285F4"/>
+    </marker>
+  </defs>
+  <rect width="900" height="160" fill="url(#bg)" rx="12"/>
+  <text x="450" y="24" font-family="'Segoe UI', sans-serif" font-size="15" font-weight="700" text-anchor="middle" fill="#f0f6fc">🔄 7-Step Query &amp; Retrieval Pipeline</text>
+
+  <!-- Step boxes -->
+  <!-- Colors: step1=query, 2=hyde, 3=bm25, 4=vector, 5=hybrid, 6=rerank, 7=answer -->
+  <rect x="10"  y="44" width="108" height="58" rx="7" fill="#1c2128" stroke="#4285F4" stroke-width="1.5"/>
+  <text x="64"  y="68" font-family="monospace" font-size="10" font-weight="700" text-anchor="middle" fill="#4285F4">① QUERY</text>
+  <text x="64"  y="84" font-family="monospace" font-size="9" text-anchor="middle" fill="#8b949e">Self-RAG</text>
+  <text x="64"  y="96" font-family="monospace" font-size="9" text-anchor="middle" fill="#8b949e">Complexity Check</text>
+
+  <line x1="118" y1="73" x2="128" y2="73" stroke="#4285F4" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <rect x="128" y="44" width="108" height="58" rx="7" fill="#1c2128" stroke="#6C3EEB" stroke-width="1.5"/>
+  <text x="182" y="68" font-family="monospace" font-size="10" font-weight="700" text-anchor="middle" fill="#6C3EEB">② HyDE</text>
+  <text x="182" y="84" font-family="monospace" font-size="9" text-anchor="middle" fill="#8b949e">Hypothetical</text>
+  <text x="182" y="96" font-family="monospace" font-size="9" text-anchor="middle" fill="#8b949e">Doc Embedding</text>
+
+  <line x1="236" y1="73" x2="246" y2="73" stroke="#4285F4" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <rect x="246" y="44" width="108" height="58" rx="7" fill="#1c2128" stroke="#FF7C00" stroke-width="1.5"/>
+  <text x="300" y="68" font-family="monospace" font-size="10" font-weight="700" text-anchor="middle" fill="#FF7C00">③ BM25</text>
+  <text x="300" y="84" font-family="monospace" font-size="9" text-anchor="middle" fill="#8b949e">Keyword</text>
+  <text x="300" y="96" font-family="monospace" font-size="9" text-anchor="middle" fill="#8b949e">Search</text>
+
+  <line x1="354" y1="73" x2="364" y2="73" stroke="#4285F4" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <rect x="364" y="44" width="108" height="58" rx="7" fill="#1c2128" stroke="#4285F4" stroke-width="1.5"/>
+  <text x="418" y="68" font-family="monospace" font-size="10" font-weight="700" text-anchor="middle" fill="#4285F4">④ VECTOR</text>
+  <text x="418" y="84" font-family="monospace" font-size="9" text-anchor="middle" fill="#8b949e">Dense</text>
+  <text x="418" y="96" font-family="monospace" font-size="9" text-anchor="middle" fill="#8b949e">Retrieval</text>
+
+  <line x1="472" y1="73" x2="482" y2="73" stroke="#4285F4" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <rect x="482" y="44" width="108" height="58" rx="7" fill="#1c2128" stroke="#22C55E" stroke-width="1.5"/>
+  <text x="536" y="68" font-family="monospace" font-size="10" font-weight="700" text-anchor="middle" fill="#22C55E">⑤ HYBRID</text>
+  <text x="536" y="84" font-family="monospace" font-size="9" text-anchor="middle" fill="#8b949e">Blend</text>
+  <text x="536" y="96" font-family="monospace" font-size="9" text-anchor="middle" fill="#8b949e">BM25 + Vector</text>
+
+  <line x1="590" y1="73" x2="600" y2="73" stroke="#4285F4" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <rect x="600" y="44" width="108" height="58" rx="7" fill="#1c2128" stroke="#FFD21E" stroke-width="1.5"/>
+  <text x="654" y="68" font-family="monospace" font-size="10" font-weight="700" text-anchor="middle" fill="#FFD21E">⑥ RERANK</text>
+  <text x="654" y="84" font-family="monospace" font-size="9" text-anchor="middle" fill="#8b949e">FlashRank</text>
+  <text x="654" y="96" font-family="monospace" font-size="9" text-anchor="middle" fill="#8b949e">Neural Reranking</text>
+
+  <line x1="708" y1="73" x2="718" y2="73" stroke="#4285F4" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <rect x="718" y="44" width="172" height="58" rx="7" fill="#1c2128" stroke="#22C55E" stroke-width="1.5"/>
+  <text x="804" y="68" font-family="monospace" font-size="10" font-weight="700" text-anchor="middle" fill="#22C55E">⑦ ANSWER</text>
+  <text x="804" y="84" font-family="monospace" font-size="9" text-anchor="middle" fill="#8b949e">Gemini LLM + Self-RAG</text>
+  <text x="804" y="96" font-family="monospace" font-size="9" text-anchor="middle" fill="#8b949e">Verify · Return</text>
+
+  <!-- Cache bypass label -->
+  <text x="450" y="130" font-family="monospace" font-size="9" text-anchor="middle" fill="#6C3EEB">⚡ Semantic Cache intercepts at Step ① — skips Steps ②–⑦ on cache hit (cosine ≥ 0.85)</text>
+</svg>

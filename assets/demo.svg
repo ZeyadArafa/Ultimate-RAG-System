@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 400" width="900" height="400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117"/>
+      <stop offset="100%" style="stop-color:#161b22"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="400" fill="url(#bg)" rx="12"/>
+
+  <!-- Terminal window -->
+  <rect x="40" y="20" width="820" height="360" rx="10" fill="#0d1117" stroke="#30363d" stroke-width="1.5"/>
+  <!-- Title bar -->
+  <rect x="40" y="20" width="820" height="36" rx="10" fill="#21262d"/>
+  <rect x="40" y="44" width="820" height="12" fill="#21262d"/>
+  <circle cx="68" cy="38" r="7" fill="#FF5F56"/>
+  <circle cx="92" cy="38" r="7" fill="#FFBD2E"/>
+  <circle cx="116" cy="38" r="7" fill="#27C93F"/>
+  <text x="450" y="43" font-family="monospace" font-size="12" text-anchor="middle" fill="#8b949e">Ultimate RAG System — Terminal</text>
+
+  <!-- Terminal content -->
+  <text x="65" y="82" font-family="monospace" font-size="12" fill="#22C55E">$ python app_3.py</text>
+  <text x="65" y="102" font-family="monospace" font-size="11" fill="#8b949e">Loading HuggingFace embeddings (all-MiniLM-L6-v2)...</text>
+  <text x="65" y="120" font-family="monospace" font-size="11" fill="#8b949e">ChromaDB initialized at ./chroma_db_threads/</text>
+  <text x="65" y="138" font-family="monospace" font-size="11" fill="#4285F4">✓ Gradio interface running on http://localhost:7860</text>
+
+  <line x1="55" y1="150" x2="845" y2="150" stroke="#21262d" stroke-width="1"/>
+
+  <text x="65" y="170" font-family="monospace" font-size="11" fill="#FFD21E">[Thread: Research-A] Uploading: attention_paper.pdf</text>
+  <text x="65" y="188" font-family="monospace" font-size="11" fill="#8b949e">  → Strategy: hierarchical  |  Embedding: balanced</text>
+  <text x="65" y="206" font-family="monospace" font-size="11" fill="#8b949e">  → Extracted 42 pages · 3,180 tokens</text>
+  <text x="65" y="224" font-family="monospace" font-size="11" fill="#8b949e">  → Parent chunks: 12  ·  Child chunks: 48</text>
+  <text x="65" y="242" font-family="monospace" font-size="11" fill="#22C55E">  ✓ Indexed to ChromaDB in 2.3s</text>
+
+  <line x1="55" y1="254" x2="845" y2="254" stroke="#21262d" stroke-width="1"/>
+
+  <text x="65" y="274" font-family="monospace" font-size="11" fill="#4285F4">[Query] "What is the attention mechanism?"</text>
+  <text x="65" y="292" font-family="monospace" font-size="11" fill="#8b949e">  → Self-RAG: complex query detected  |  Cache miss</text>
+  <text x="65" y="310" font-family="monospace" font-size="11" fill="#8b949e">  → HyDE generated  →  BM25 + Vector hybrid retrieval</text>
+  <text x="65" y="328" font-family="monospace" font-size="11" fill="#8b949e">  → FlashRank reranked 12 chunks  →  top 5 selected</text>
+  <text x="65" y="346" font-family="monospace" font-size="11" fill="#22C55E">  ✓ Answer verified by Self-RAG  |  Response time: 1.8s</text>
+
+  <text x="65" y="370" font-family="monospace" font-size="11" fill="#6C3EEB">[Cache] Query stored  |  Next similar query → 0.12s ⚡</text>
+</svg>

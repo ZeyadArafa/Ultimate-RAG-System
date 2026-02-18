@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 320" width="900" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117"/>
+      <stop offset="100%" style="stop-color:#161b22"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="320" fill="url(#bg)" rx="12"/>
+  <text x="450" y="30" font-family="'Segoe UI', sans-serif" font-size="17" font-weight="700" text-anchor="middle" fill="#f0f6fc">🪵 Chunking Strategies Comparison</text>
+
+  <!-- Column headers -->
+  <text x="115" y="58" font-family="monospace" font-size="12" font-weight="700" text-anchor="middle" fill="#4285F4">BALANCED</text>
+  <text x="340" y="58" font-family="monospace" font-size="12" font-weight="700" text-anchor="middle" fill="#FF7C00">PRECISE</text>
+  <text x="565" y="58" font-family="monospace" font-size="12" font-weight="700" text-anchor="middle" fill="#6C3EEB">CONTEXTUAL</text>
+  <text x="790" y="58" font-family="monospace" font-size="12" font-weight="700" text-anchor="middle" fill="#22C55E">HIERARCHICAL</text>
+
+  <!-- BALANCED -->
+  <rect x="20" y="68" width="190" height="220" rx="8" fill="#161b22" stroke="#4285F4" stroke-width="1.5"/>
+  <rect x="34" y="82" width="162" height="32" rx="4" fill="#4285F430"/>
+  <rect x="34" y="120" width="162" height="32" rx="4" fill="#4285F430"/>
+  <rect x="34" y="158" width="162" height="32" rx="4" fill="#4285F430"/>
+  <rect x="34" y="196" width="162" height="32" rx="4" fill="#4285F430"/>
+  <text x="115" y="102" font-family="monospace" font-size="10" text-anchor="middle" fill="#4285F4">chunk (700 tokens)</text>
+  <text x="115" y="140" font-family="monospace" font-size="10" text-anchor="middle" fill="#4285F4">chunk (700 tokens)</text>
+  <text x="115" y="178" font-family="monospace" font-size="10" text-anchor="middle" fill="#4285F4">chunk (700 tokens)</text>
+  <text x="115" y="216" font-family="monospace" font-size="10" text-anchor="middle" fill="#4285F4">chunk (700 tokens)</text>
+  <text x="115" y="262" font-family="monospace" font-size="9" text-anchor="middle" fill="#8b949e">overlap: 120t</text>
+  <text x="115" y="278" font-family="monospace" font-size="9" text-anchor="middle" fill="#8b949e">Good all-rounder</text>
+
+  <!-- PRECISE -->
+  <rect x="245" y="68" width="190" height="220" rx="8" fill="#161b22" stroke="#FF7C00" stroke-width="1.5"/>
+  <rect x="259" y="82"  width="162" height="22" rx="4" fill="#FF7C0030"/>
+  <rect x="259" y="110" width="162" height="22" rx="4" fill="#FF7C0030"/>
+  <rect x="259" y="138" width="162" height="22" rx="4" fill="#FF7C0030"/>
+  <rect x="259" y="166" width="162" height="22" rx="4" fill="#FF7C0030"/>
+  <rect x="259" y="194" width="162" height="22" rx="4" fill="#FF7C0030"/>
+  <rect x="259" y="222" width="162" height="22" rx="4" fill="#FF7C0030"/>
+  <text x="340" y="97"  font-family="monospace" font-size="10" text-anchor="middle" fill="#FF7C00">chunk (400t)</text>
+  <text x="340" y="125" font-family="monospace" font-size="10" text-anchor="middle" fill="#FF7C00">chunk (400t)</text>
+  <text x="340" y="153" font-family="monospace" font-size="10" text-anchor="middle" fill="#FF7C00">chunk (400t)</text>
+  <text x="340" y="181" font-family="monospace" font-size="10" text-anchor="middle" fill="#FF7C00">chunk (400t)</text>
+  <text x="340" y="209" font-family="monospace" font-size="10" text-anchor="middle" fill="#FF7C00">chunk (400t)</text>
+  <text x="340" y="237" font-family="monospace" font-size="10" text-anchor="middle" fill="#FF7C00">chunk (400t)</text>
+  <text x="340" y="262" font-family="monospace" font-size="9" text-anchor="middle" fill="#8b949e">overlap: 80t</text>
+  <text x="340" y="278" font-family="monospace" font-size="9" text-anchor="middle" fill="#8b949e">Fast fact lookup</text>
+
+  <!-- CONTEXTUAL -->
+  <rect x="470" y="68" width="190" height="220" rx="8" fill="#161b22" stroke="#6C3EEB" stroke-width="1.5"/>
+  <rect x="484" y="82"  width="162" height="52" rx="4" fill="#6C3EEB30"/>
+  <rect x="484" y="140" width="162" height="52" rx="4" fill="#6C3EEB30"/>
+  <rect x="484" y="198" width="162" height="52" rx="4" fill="#6C3EEB30"/>
+  <text x="565" y="112" font-family="monospace" font-size="10" text-anchor="middle" fill="#6C3EEB">chunk (1200t)</text>
+  <text x="565" y="170" font-family="monospace" font-size="10" text-anchor="middle" fill="#6C3EEB">chunk (1200t)</text>
+  <text x="565" y="228" font-family="monospace" font-size="10" text-anchor="middle" fill="#6C3EEB">chunk (1200t)</text>
+  <text x="565" y="262" font-family="monospace" font-size="9" text-anchor="middle" fill="#8b949e">overlap: 200t</text>
+  <text x="565" y="278" font-family="monospace" font-size="9" text-anchor="middle" fill="#8b949e">Complex analysis</text>
+
+  <!-- HIERARCHICAL -->
+  <rect x="695" y="68" width="190" height="220" rx="8" fill="#161b22" stroke="#22C55E" stroke-width="1.5"/>
+  <!-- Parent chunk -->
+  <rect x="709" y="82" width="162" height="90" rx="4" fill="#22C55E20" stroke="#22C55E" stroke-width="1"/>
+  <text x="790" y="100" font-family="monospace" font-size="10" font-weight="700" text-anchor="middle" fill="#22C55E">PARENT (2000t)</text>
+  <!-- Child chunks inside -->
+  <rect x="718" y="106" width="68" height="24" rx="3" fill="#22C55E40"/>
+  <rect x="795" y="106" width="68" height="24" rx="3" fill="#22C55E40"/>
+  <rect x="718" y="136" width="68" height="24" rx="3" fill="#22C55E40"/>
+  <rect x="795" y="136" width="68" height="24" rx="3" fill="#22C55E40"/>
+  <text x="752" y="122" font-family="monospace" font-size="9" text-anchor="middle" fill="#22C55E">child 500t</text>
+  <text x="829" y="122" font-family="monospace" font-size="9" text-anchor="middle" fill="#22C55E">child 500t</text>
+  <text x="752" y="152" font-family="monospace" font-size="9" text-anchor="middle" fill="#22C55E">child 500t</text>
+  <text x="829" y="152" font-family="monospace" font-size="9" text-anchor="middle" fill="#22C55E">child 500t</text>
+  <!-- Second parent -->
+  <rect x="709" y="180" width="162" height="90" rx="4" fill="#22C55E20" stroke="#22C55E" stroke-width="1"/>
+  <text x="790" y="198" font-family="monospace" font-size="10" font-weight="700" text-anchor="middle" fill="#22C55E">PARENT (2000t)</text>
+  <rect x="718" y="204" width="68" height="24" rx="3" fill="#22C55E40"/>
+  <rect x="795" y="204" width="68" height="24" rx="3" fill="#22C55E40"/>
+  <rect x="718" y="234" width="68" height="24" rx="3" fill="#22C55E40"/>
+  <rect x="795" y="234" width="68" height="24" rx="3" fill="#22C55E40"/>
+  <text x="752" y="220" font-family="monospace" font-size="9" text-anchor="middle" fill="#22C55E">child 500t</text>
+  <text x="829" y="220" font-family="monospace" font-size="9" text-anchor="middle" fill="#22C55E">child 500t</text>
+  <text x="752" y="250" font-family="monospace" font-size="9" text-anchor="middle" fill="#22C55E">child 500t</text>
+  <text x="829" y="250" font-family="monospace" font-size="9" text-anchor="middle" fill="#22C55E">child 500t</text>
+  <text x="790" y="278" font-family="monospace" font-size="9" text-anchor="middle" fill="#8b949e">Best: research papers</text>
+
+  <!-- Legend bar -->
+  <text x="450" y="305" font-family="monospace" font-size="9" text-anchor="middle" fill="#8b949e">Retrieve: child chunks (precision)  ·  Return: parent chunks (rich context)</text>
+</svg>
