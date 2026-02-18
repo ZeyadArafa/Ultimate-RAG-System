@@ -1,0 +1,11 @@
+langchain
+langchain-google-genai
+langchain-huggingface
+langchain-community
+langchain-chroma
+chromadb
+rank_bm25         # Required for BM25Retriever
+flashrank         # Required for FlashrankRerank
+pypdf
+python-dotenv
+gradio
